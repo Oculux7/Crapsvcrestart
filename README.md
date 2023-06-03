@@ -5,6 +5,6 @@ $serviceName = "SET THE NAME OF THE SERVICE"
 
 $logFilePath = "SET THE PATH OF THE DIR WHERE YOU WANT TO LOG"
 # Create Scheduled task to run on start up
-open Power Shell with admin rights and run command below to run scripts on start up (change file dir after -File)
+open Power Shell with admin rights and run command below to run script on start up (change file dir after -File)
 
 schtasks /create /tn "CRAPsvcRestart" /sc onstart /delay 0000:30 /rl highest /ru system /tr "powershell.exe -File SET PATH WHERE SCRIPT IS STORED"
